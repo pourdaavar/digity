@@ -1,0 +1,19 @@
+{
+    "version": "0.2",
+    "language": "en",
+    "words": [
+        "digity",
+        "fullstacksjs",
+        "Hossein",
+        "Pourdavar"
+    ],
+    "ignoreWords": [],
+    "ignorePaths": [
+        "node_modules/**",
+        "endpoints/**",
+        "*coverage/**",
+        ".husky/**",
+        ".github/**",
+        "lib/**"
+    ]
+}
