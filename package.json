@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "generate n-digit code as a number :)",
   "author": "Hossein Pourdavar <h.pourdavar@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hoseinprd/digity.git"
+  },
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "typings": "./lib/types/index.d.ts",
@@ -28,11 +32,13 @@
     "test": "vitest --run",
     "test:ci": "CI=true vitest --allowOnly",
     "test:watch": "vitest",
-    "test:coverage": "vitest --coverage"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hoseinprd/digity.git"
+    "test:coverage": "vitest --coverage",
+    "prerelease": "npm run verify",
+    "release": "standard-version && npm publish && git push --follow-tags --no-verify",
+    "prepublishOnly": "pinst --disable && pkg-ok",
+    "postpublish": "pinst --enable",
+    "verify": "npm run test",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "token",
@@ -54,9 +60,12 @@
     "@semantic-release/release-notes-generator": "10.0.3",
     "@vitest/coverage-c8": "0.28.5",
     "eslint": "8.34.0",
+    "pinst": "3.0.0",
+    "pkg-ok": "3.0.0",
     "prettier": "2.8.4",
     "semantic-release": "20.1.0",
     "shx": "0.3.4",
+    "standard-version": "9.5.0",
     "vitest": "0.28.5"
   }
 }
