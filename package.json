@@ -1,0 +1,50 @@
+{
+  "name": "digity",
+  "version": "1.0.0",
+  "description": "generate n-digit code as a number :)",
+  "author": "Hossein Pourdavar <h.pourdavar@gmail.com>",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "typings": "./lib/types/index.d.ts",
+  "scripts": {
+    "clean": "shx rm -rf lib/*",
+    "prebuild": "npm run clean",
+    "build": "tsc --project ./tsconfig.cjs.json && tsc --project ./tsconfig.esm.json && ./fixup",
+    "lint": "eslint . --ext .ts --fix",
+    "lint:ci": "eslint . --ext .ts",
+    "test": "vitest --run",
+    "test:ci": "CI=true vitest --allowOnly",
+    "test:watch": "vitest",
+    "test:coverage": "vitest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoseinprd/digity.git"
+  },
+  "keywords": [
+    "token",
+    "n-digit",
+    "digit"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoseinprd/digity/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "homepage": "https://github.com/hoseinprd/digity#readme",
+  "devDependencies": {
+    "@fullstacksjs/eslint-config": "9.1.0",
+    "@fullstacksjs/tsconfig": "1.0.0",
+    "@semantic-release/github": "8.0.7",
+    "@semantic-release/npm": "9.0.2",
+    "@semantic-release/release-notes-generator": "10.0.3",
+    "@vitest/coverage-c8": "0.28.5",
+    "eslint": "8.34.0",
+    "prettier": "2.8.4",
+    "semantic-release": "20.1.0",
+    "shx": "0.3.4",
+    "vitest": "0.28.5"
+  }
+}
