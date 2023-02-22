@@ -39,7 +39,7 @@
     "n-digit",
     "digit"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/hoseinprd/digity/issues"
   },
