@@ -1,6 +1,6 @@
 {
   "name": "digity",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "generate n-digit code as a number :)",
   "author": "Hossein Pourdavar <h.pourdavar@gmail.com>",
   "repository": {
@@ -35,8 +35,6 @@
     "test:coverage": "vitest --coverage",
     "prerelease": "npm run verify",
     "release": "standard-version && npm publish && git push --follow-tags --no-verify",
-    "prepublishOnly": "pinst --disable && pkg-ok",
-    "postpublish": "pinst --enable",
     "verify": "npm run test",
     "semantic-release": "semantic-release"
   },
