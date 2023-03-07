@@ -1,3 +1,8 @@
+/**
+ * create an n-digit random number
+ * @param n number of digits
+ * @example digity(5) // exp: 85850
+ */
 export const digity = (n: number) => {
   if (!Number.isInteger(n)) throw new Error('type of length must be integer');
   if (n <= 1) throw new Error('length of code cannot <= 1');
