@@ -1,6 +1,6 @@
 {
   "name": "digity",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "generate n-digit code as a number :)",
   "author": "Hossein Pourdavar <h.pourdavar@gmail.com>",
   "repository": {
