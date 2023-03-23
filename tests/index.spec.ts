@@ -7,11 +7,11 @@ describe('digity', () => {
     expect(digity).toBeDefined();
   });
 
-  it('should throw an error: args not valid integer', () => {
+  it('should throw an error: arg is not a valid integer', () => {
     expect(() => digity(5.5)).toThrow('type of length must be integer');
   });
 
-  it('should throw an error: length lower than 1', () => {
+  it('should throw an error: arg\'s length is lower than or equal to 1', () => {
     expect(() => digity(1)).toThrow('length of code cannot <= 1');
   });
 
