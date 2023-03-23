@@ -5,7 +5,7 @@
   "author": "Hossein Pourdavar <h.pourdavar@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:hoseinprd/digity.git"
+    "url": "git@github.com:pourdaavar/digity.git"
   },
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
