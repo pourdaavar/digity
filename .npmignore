@@ -17,7 +17,7 @@ scripts/
 **/*.test.js
 **/*.test.d.ts
 **/*.spec.d.ts
-__tests__
+tests
 coverage
 
 # Sources
